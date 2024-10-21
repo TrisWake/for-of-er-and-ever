@@ -2,7 +2,52 @@
  * YOUR CODE HERE *
  ******************/
 
+const addAll = function(numbers){
+  let total = 0
+  for (let num of numbers) {
+    total = total + num
+  }
+  return total
+}
 
+const countSpaces = function(string){
+  let count = 0
+  for(let char of string){
+    if(char === " "){
+      count++
+    }
+  }
+  return count
+}
+
+const countTrues = function(boolean){
+  let count = 0
+  for(let value of boolean)
+    if(value === true){
+      count++
+    }return count
+}
+
+const makeFriendly = function(paragragh){
+  let result = ""
+  for(let para of paragragh)
+    if(para === ".")
+      result = result + "!"
+    else{
+      result = result + para
+    }return result
+  }
+
+  // const cubeAll = function(cubed){
+  //   
+  // }return value
+  // }
+
+  const cubeAll = function(cubed) {
+    return cubed.map(function(num){
+    return num * num * num;
+  })
+}
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
  *********************************/
